@@ -5,14 +5,14 @@ public class Animal {
     // has tail?
     public boolean tail = true;
 
+    public boolean isTail() {
+      return tail;
+    }
+
     private int eyesCount = 2;
 
     public int getEyesCount() {
       return eyesCount;
-    }
-
-    public void setEyesCount(int eyesCount) {
-      this.eyesCount = eyesCount;
     }
 
     private int earsCount = 2;
@@ -21,26 +21,16 @@ public class Animal {
       return earsCount;
     }
 
-    public void setEarsCount(int earsCount) {
-      this.earsCount = earsCount;
-    }
-
     private int noseCount = 1;
 
     public int getNoseCount() {
       return noseCount;
     }
 
-    public void setNoseCount(int noseCount) {
-      this.noseCount = noseCount;
-    }
+    private int mouthCount = 1;
 
     public int getMouthCount() {
       return mouthCount;
-    }
-
-    public void setMouthCount(int mouthCount) {
-      this.mouthCount = mouthCount;
     }
 
     private int legsCount = 2;
@@ -49,13 +39,23 @@ public class Animal {
       return legsCount;
     }
 
-    public void setLegsCount(int legsCount) {
-      this.legsCount = legsCount;
+    private boolean walking;
+
+    public boolean isWalking() {
+      return walking;
     }
 
-    private int mouthCount = 1;
+    public void setWalking(boolean walking) {
+      this.walking = walking;
+    }
 
-    private boolean walking;
+    public int getMovingSpeed() {
+      return movingSpeed;
+    }
+
+    public void setMovingSpeed(int movingSpeed) {
+      this.movingSpeed = movingSpeed;
+    }
 
     private int movingSpeed;
 
@@ -63,21 +63,29 @@ public class Animal {
     private boolean walk = true;
 
     // can fly?
-    private boolean _fly = false;
+    private boolean fly = false;
 
     public boolean getFly()
     {
-        return _fly;
+        return fly;
     }
 
-    public void setFly(boolean _fly) {
-        this._fly = _fly;
+    public void setFly(boolean fly) {
+        this.fly = fly;
     }
 
     // in inches
     //in cms
     public abstract int legsHeight;
 
+    public int getLegsHeight() {
+      return legsHeight;
+    }
+
     //in cms
     public abstract int tailLength;
+
+    public int getTailLength() {
+      return tailLength;
+    }
 }
