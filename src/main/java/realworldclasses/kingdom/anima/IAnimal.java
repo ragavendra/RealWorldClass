@@ -1,5 +1,5 @@
 package realworldclasses.kingdom.anima;
 
-public interface IAnimal {
+public abstract interface IAnimal {
 
 }

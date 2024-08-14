@@ -1,15 +1,55 @@
 package realworldclasses.kingdom.anima;
 
-public abstract class Animal {
+public abstract class Animal implements IAnimal {
 
     // has tail?
-    public boolean tail = true;
+    public boolean tail;
 
-    public boolean isTail() {
+    public void setTail(boolean tail) {
+      this.tail = tail;
+    }
+
+    public boolean hasTail() {
       return tail;
     }
 
     private int eyesCount = 2;
+
+    public void setEyesCount(int eyesCount) {
+      this.eyesCount = eyesCount;
+    }
+
+    public void setEarsCount(int earsCount) {
+      this.earsCount = earsCount;
+    }
+
+    public void setNoseCount(int noseCount) {
+      this.noseCount = noseCount;
+    }
+
+    public void setMouthCount(int mouthCount) {
+      this.mouthCount = mouthCount;
+    }
+
+    public void setLegsCount(int legsCount) {
+      this.legsCount = legsCount;
+    }
+
+    public boolean isWalk() {
+      return walk;
+    }
+
+    public void setWalk(boolean walk) {
+      this.walk = walk;
+    }
+
+    public void setLegsHeight(int legsHeight) {
+      this.legsHeight = legsHeight;
+    }
+
+    public void setTailLength(int tailLength) {
+      this.tailLength = tailLength;
+    }
 
     public int getEyesCount() {
       return eyesCount;
