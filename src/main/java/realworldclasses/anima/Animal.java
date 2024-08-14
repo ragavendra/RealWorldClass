@@ -2,78 +2,82 @@ package realworldclasses.anima;
 
 public class Animal {
 
-    public int eyesCount;
-
-    public int earsCount;
-
-    public int noseCount;
-
-    public int mouthCount;
-
-    public int legsCount;
-
-    // in inches
-    public int legsHeight;
-
     // has tail?
-    public boolean tail;
+    public boolean tail = true;
 
-    // in inches
-    public int tailLength;
+    private int eyesCount = 2;
+
+    public int getEyesCount() {
+      return eyesCount;
+    }
+
+    public void setEyesCount(int eyesCount) {
+      this.eyesCount = eyesCount;
+    }
+
+    private int earsCount = 2;
+
+    public int getEarsCount() {
+      return earsCount;
+    }
+
+    public void setEarsCount(int earsCount) {
+      this.earsCount = earsCount;
+    }
+
+    private int noseCount = 1;
+
+    public int getNoseCount() {
+      return noseCount;
+    }
+
+    public void setNoseCount(int noseCount) {
+      this.noseCount = noseCount;
+    }
+
+    public int getMouthCount() {
+      return mouthCount;
+    }
+
+    public void setMouthCount(int mouthCount) {
+      this.mouthCount = mouthCount;
+    }
+
+    private int legsCount = 2;
+
+    public int getLegsCount() {
+      return legsCount;
+    }
+
+    public void setLegsCount(int legsCount) {
+      this.legsCount = legsCount;
+    }
+
+    private int mouthCount = 1;
+
+    private boolean walking;
+
+    private int movingSpeed;
 
     // can walk?
-    public boolean walk;
+    private boolean walk = true;
 
-            // can fly?
-        private bool _fly = false;
+    // can fly?
+    private boolean _fly = false;
 
-        // can walk?
-        private bool _walk = true;
+    public boolean getFly()
+    {
+        return _fly;
+    }
 
-        private int _eyesCount = 2;
+    public void setFly(boolean _fly) {
+        this._fly = _fly;
+    }
 
-        private int _earsCount = 2;
+    // in inches
+    //in cms
+    public abstract int legsHeight;
 
-        private int _noseCount = 1;
-
-        private int _mouthCount = 1;
-
-        private int _legsCount = 2;
-
-        /*
-        private bool _walking;
-
-        private int _movingSpeed;
-
-        private bool _tail = true;
-
-        public bool Fly { get { return _fly; } set { _fly = value; } }
-
-        public int EyesCount { get { return _eyesCount; } set { _eyesCount = value; } }
-
-        public int EarsCount { get { return _earsCount; } set { _earsCount = value; } }
-
-        public int NoseCount { get { return _noseCount; } set { _noseCount = value; } }
-
-        public int MouthCount { get { return _mouthCount; } set { _mouthCount = value; } }
-
-        public int LegsCount { get { return _legsCount; } set { _legsCount = value; } }
-
-        public bool Tail { get => _tail; set => _tail = value; }
-
-        //in cms
-        public abstract int LegsHeight { get; set; }
-
-        //in cms
-        public abstract int TailLength { get; set; }
-
-        public bool Walking
-        {
-            get { return _walking; }
-            set { if (_movingSpeed <= 3) { _walking = true; } }
-        }
-
-        public int MovingSpeed { get { return _movingSpeed; } set { _movingSpeed = value; } }
-
-        public bool Walk { get { return true; } }*/
+    //in cms
+    public abstract int tailLength;
 }
