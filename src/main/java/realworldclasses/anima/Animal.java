@@ -76,14 +76,14 @@ public class Animal {
 
     // in inches
     //in cms
-    public abstract int legsHeight;
+    private int legsHeight;
 
     public int getLegsHeight() {
       return legsHeight;
     }
 
     //in cms
-    public abstract int tailLength;
+    private int tailLength;
 
     public int getTailLength() {
       return tailLength;
