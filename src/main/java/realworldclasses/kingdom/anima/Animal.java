@@ -1,6 +1,6 @@
-package realworldclasses.anima;
+package realworldclasses.kingdom.anima;
 
-public class Animal {
+public abstract class Animal {
 
     // has tail?
     public boolean tail = true;
